@@ -1,0 +1,181 @@
+﻿
+/** datatable ---------------------------------------------- **/
+table.datatable {
+    width: 100% !important;
+    line-height: 1.0rem;
+}
+table.datatable th,
+table.datatable td {
+    background-color: #fff;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid #ccc;
+}
+
+table.datatable thead th {
+    background-color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fff;
+    padding: 8px;
+}
+table.datatable thead th.sorting,
+table.datatable thead th.sorting_desc,
+table.datatable thead th.sorting_asc {
+    cursor: pointer;
+}
+table.datatable thead th.sorting:active,
+table.datatable thead th.sorting_desc:active,
+table.datatable thead th.sorting_asc:active {
+    background-color: #333;
+}
+
+table.datatable tbody tr:nth-child(even) td {
+    background-color: #eee;
+}
+table.datatable tbody tr:hover th,
+table.datatable tbody tr:hover td {
+    background-color: #ffd;
+}
+table.datatable tbody tr:hover td.dataTables_empty {
+    background-color: #fff;
+}
+table.datatable tbody td.company_name {
+    width: 100%;
+}
+table.datatable tbody td.integer {
+    text-align: right;
+    white-space: nowrap;
+}
+table.datatable tbody td.nowrap {
+    white-space: nowrap;
+}
+
+table.datatable tbody td.functions .function_buttons {
+    width: 52px;
+    height: 22px;
+    margin: 2px;
+}
+table.datatable tbody td.functions .function_buttons li {
+    float: left;
+    padding: 0 2px 0 2px;
+}
+table.datatable tbody td.functions .function_buttons a {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #999;
+    font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius:    4px;
+    border-radius:         4px;
+}
+table.datatable tbody td.functions .function_buttons .function_edit a:before {
+    line-height: 20px;
+    content: "\f040";
+}
+table.datatable tbody td.functions .function_buttons .function_delete a:before {
+    line-height: 20px;
+    content: "\f1f8";
+}
+table.datatable tbody td.functions .function_buttons a:hover,
+table.datatable tbody td.functions .function_buttons a:active,
+table.datatable tbody td.functions .function_buttons a:focus {
+    background-color: #333;
+}
+table.datatable tbody td.functions .function_buttons span {
+    display: none;
+}
+/* END datatable */
+
+
+/* NEW */
+/*=================================================*/
+#header_for_logo {
+	background: #FBFBFB;
+	border-bottom: 1px solid #CBCBCB;
+	height: 64px;
+	padding: 8px 0px 0px 0px;
+	min-width:768px;
+	clear:both;
+}
+
+
+.signInBox {
+	text-align: left;
+	background-color: #FFF;
+	margin:  0px auto ;
+	padding: 40px 50px 40px 30px;
+	width:   560px;
+}
+
+.signInBox label {
+	width: auto;
+	font-weight: bold;
+	font-size: 15px;
+}
+.signInBox select {
+    width: 124px;
+    height: 30px;
+    background-color: #f9f9f9;
+    padding: 4px 4px 4px 10px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #666;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+    background: url(/library/images/down_array.png) no-repeat right #fff;
+    -webkit-appearance: none;
+    background-position-x: 100px;
+}
+.signInBox input[type=text],
+.signInBox input[type=password] {
+    width: 200px;
+    padding: 4px;
+    font-size: 15px;
+    line-height: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 20px;
+    background-color: #f9f9f9;
+}
+.signInBox input:focus {
+  background-color: #ffd;
+  color: #000;
+}
+
+.signInBox input[type=submit] {
+    /*width: 120px;*/
+    height: 34px;
+    padding: 6px 30px 6px 30px;
+    font-size: 16px;
+    color: white;
+    line-height: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #305d35;
+}
+
+.twoColumn{
+    width: 49%;
+}
+.posLeft{
+	float: left;
+}
+.posRight{
+	float: right;
+	text-align:right;
+}
+.posCenter{
+	text-align: center;
+}

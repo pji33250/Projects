@@ -1,0 +1,112 @@
+
+.lightbox_container {
+  display: none;
+  width: 840px;
+  height: 540px;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 200;
+  background-color: #fff;
+  color: #666;
+  overflow-y: scroll;
+  overflow-x: auto;
+  padding: 30px 0 0 0;
+   -webkit-box-sizing: border-box;
+  -moz-box-sizing:     border-box;
+  box-sizing:          border-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius:    6px;
+  border-radius:         6px;
+}
+
+.lightbox_content {
+  width: 750px;
+  padding: 0 20px 0 20px;
+}
+
+/* double cell (colspan=2) */
+.lightbox_content .input_container2 {
+  width: 505px;
+  margin: 0 0 10px 0;
+}
+.lightbox_content .input_container2:after {
+  clear: both;
+  height: 0;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  content: ' ';
+}
+.lightbox_content .input_container2 label {
+  width: 100px;
+  float: left;
+  font-size: 1rem;
+  line-height: 32px;
+  text-align: right;
+}
+.lightbox_content .input_container2 label span.required {
+    font-weight: bold;
+    float: right;
+    color: #f70;
+}
+
+.lightbox_content .input_container2 .field_container2 {
+  width: 400px;
+  float: right;
+  position: relative;
+}
+.lightbox_content .input_container2 .field_container2 label.error {
+  width: 400px;
+  display: block;
+  background-color: #fff1e6;
+  line-height: 1.4rem;
+  color: #333;
+  padding: 4px 0 4px 10px;
+  border: 1px solid #f70;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius:    6px;
+  border-radius:         6px;
+  margin: 0 0 5px 0;
+}
+.lightbox_content .input_container2 .field_container2 label.error.valid {
+  display: none !important;
+}
+.lightbox_content .input_container2 .field_container2 input {
+  width: 400px;
+  height: 32px;
+  background-color: #f9f9f9;
+  line-height: 30px;
+  color: #666;
+  padding: 0 0 0 10px;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius:    6px;
+  border-radius:         6px;
+}
+.lightbox_content .input_container2 .field_container2 select {
+  width: 400px;
+  height: 32px;
+  background-color: #f9f9f9;
+  line-height: 30px;
+  color: #666;
+  padding: 0 0 0 10px;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  -webkit-border-radius: 6px;
+  -moz-border-radius:    6px;
+  border-radius:         6px;
+  background: transparent url(down_arrow.png) no-repeat 190px center;
+}
+.lightbox_content .input_container2 .field_container2 select:focus {
+  background-color: #ffd;
+  color: #000;
+}

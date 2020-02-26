@@ -1,0 +1,199 @@
+
+.lightbox_container {
+    display: none;
+    position: absolute;
+    width: 1040px;
+    height: 600px;
+    margin-left: -520px;
+    margin-top:  -300px;
+    top:         50%;
+    left:        50%;
+    z-index: 200;
+    background-color: #fff;
+    color: #666;
+    overflow-y: scroll;
+    overflow-x: auto;
+    padding: 30px 0 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:     border-box;
+    box-sizing:          border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+}
+
+.lightbox_content {
+    width: 960px;
+    padding: 0 20px 0 30px;
+}
+
+/* single cell */
+.lightbox_content .input_container {
+    width: 245px; /*label length + input length + 5 */
+    margin: 0;   /*top,right,bottom,left*/
+}
+
+.lightbox_content .input_container label {
+    width: 80px;
+    float: left;
+    font-size: 1rem;
+    line-height: 32px;
+    text-align: right;
+}
+.lightbox_content .input_container label span.required {
+    font-weight: bold;
+    float: right;
+    color: #f70;
+}
+
+.lightbox_content .input_container .field_container {
+    width: 160px;
+    float: right;
+    position: relative;
+}
+
+.lightbox_content .input_container .field_container label.error {
+    width: 160px;
+    text-align: left;
+    display: block;
+    background-color: #fff1e6;
+    line-height: 1.4rem;
+    color: #333;
+    padding: 4px 0 4px 10px;
+    border: 1px solid #f70;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+    margin: 0 0 5px 0;
+}
+
+
+.lightbox_content .input_container .field_container input {
+    width: 160px;
+    height: 32px;
+    background-color: #f9f9f9;
+    line-height: 30px;
+    color: #666;
+    padding: 0 0 0 10px;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+}
+
+.lightbox_content .input_container .field_container select {
+    width: 160px;
+    height: 32px;
+    background-color: #f9f9f9;
+    padding: 4px 4px 4px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+    background: url(/library/images/down_array.png) no-repeat right #fff;
+    -webkit-appearance: none;
+    background-position-x: 136px;
+}
+
+
+/* double cell */
+.lightbox_content .input_container2 {
+    width: 405px;     /*label length + input length + 5 */
+    margin: 0;        /*top,right,bottom,left*/
+}
+
+.lightbox_content .input_container2 label {
+    width: 80px;
+    float: left;
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: right;
+}
+.lightbox_content .input_container2 label span.required {
+    font-weight: bold;
+    float: right;
+    color: #f70;
+}
+
+.lightbox_content .input_container2 .field_container2 {
+    width: 320px;
+    float: right;
+    position: relative;
+}
+
+.lightbox_content .input_container2 .field_container2 label.error {
+    width: 320px;
+    text-align: left;
+    display: block;
+    background-color: #fff1e6;
+    line-height: 1.4rem;
+    color: #333;
+    padding: 4px 0 4px 10px;
+    border: 1px solid #f70;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+    margin: 0 0 5px 0;
+}
+.lightbox_content .input_container2 .field_container2 label.error.valid {
+  display: none !important;
+}
+
+.lightbox_content .input_container2 .field_container2 input {
+    width: 320px;
+    height: 32px;
+    background-color: #f9f9f9;
+    line-height: 30px;
+    color: #666;
+    padding: 0 0 0 10px;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius:    6px;
+    border-radius:         6px;
+}
+
+.lightbox_content .input_container2 .field_container2 input:focus {
+    background-color: #ffd;
+    color: #000;
+}
+
+
+.lightbox_content .input_container2 .field_container2.error:after,
+.lightbox_content .input_container2 .field_container2.valid:after {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  right: -42px;
+  font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+.lightbox_content .input_container2 .field_container2.error:after {
+  content: '\f00d';
+  color: #c00;
+}
+.lightbox_content .input_container2 .field_container2.valid:after {
+  content: '\f00c';
+  color: #090;
+}
